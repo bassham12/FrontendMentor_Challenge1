@@ -1,0 +1,122 @@
+/*****  Colors used  ****/
+/*  body 
+    background-color: #eee
+    list-items: #444 
+    #register border-color: black
+    .button border-color: black
+    .button background-color: black
+    .button color: white
+    .headline-para color: #444
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+
+}
+ul {
+    list-style: none;
+}
+ 
+.list-items, .headline-para {
+    color: #444;
+}
+
+
+
+/****** Desktop media *******/
+@media screen and (min-width: 800px){
+   
+   /*********   Navigation style ********/
+    .logo-main-list {
+        float: left;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .login-register-list {
+        display: flex;
+        flex-direction: row;
+        float: right;
+    }
+    
+    nav {
+        margin: 2em;
+    }
+
+    #main-list-items {
+        margin-left: 1em;
+    }
+
+    .list-items {
+        display: inline;
+        margin: 0em 1em;
+    }
+
+
+    #register {
+        padding: 0.5em 1em;
+        border: solid black 0.1em;
+        border-radius: 20px;
+
+    }
+    
+    
+    .container {
+        clear: both;
+        padding: 4em;
+        margin-bottom: 3em;
+    }
+
+
+    .article {
+        display: block;
+        float: left;
+        width: 20em;
+        margin-left: 3em;
+        
+    }
+
+    .headline {
+        font-size: 3.4em;
+        margin: 0.5em 0em;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 15em;
+    }
+
+    .headline-para {
+        width: 20em;
+        margin-bottom: 2em;
+    }
+
+    .button {
+        padding: 1em;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+    }
+    
+    .hero {
+        display: block;
+        float: right; 
+        width: 20em;
+    }
+
+    .hero-image {
+        width: 20em;
+        
+    }
+
+    
+
+
+    .attribution {
+        clear: both;
+    }
+
+}
+
+
