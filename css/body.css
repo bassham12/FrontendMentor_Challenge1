@@ -16,6 +16,11 @@
     background-color: #eee;
 
 }
+
+nav {
+        margin: 2em 1em;
+    }
+
 ul {
     list-style: none;
 }
@@ -30,6 +35,10 @@ ul {
 @media screen and (min-width: 800px){
    
    /*********   Navigation style ********/
+    .mobile {
+        display: none;
+    }
+
     .logo-main-list {
         float: left;
         display: flex;
@@ -42,12 +51,11 @@ ul {
         float: right;
     }
     
-    nav {
-        margin: 2em;
-    }
+    
 
     #main-list-items {
         margin-left: 1em;
+        font-weight: 500;
     }
 
     .list-items {
@@ -66,57 +74,63 @@ ul {
     
     .container {
         clear: both;
-        padding: 4em;
-        margin-bottom: 3em;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        column-gap: 10%;  
+        margin: 5em 8em; 
     }
 
-
     .article {
-        display: block;
-        float: left;
-        width: 20em;
-        margin-left: 3em;
-        
+        margin-top: 5em;
     }
 
     .headline {
-        font-size: 3.4em;
-        margin: 0.5em 0em;
+        font-weight: 700;
+        font-size: 4em;
+        margin: 0.6em 0em;
         font-family: Arial, Helvetica, sans-serif;
-        width: 15em;
     }
 
     .headline-para {
-        width: 20em;
+        font-weight: 500;
+        font-size: 18px;
+        width: 90%;
         margin-bottom: 2em;
     }
 
     .button {
-        padding: 1em;
+        padding: 1em 2em;
         border: 1px solid black;
-        border-radius: 20px;
+        border-radius: 10px;
         background-color: black;
         color: white;
     }
     
     .hero {
-        display: block;
-        float: right; 
-        width: 20em;
+        margin-top: 2.5em;
+        margin-right: 5%;
+        margin-left: 10%;
     }
 
     .hero-image {
-        width: 20em;
+        width: 25em;
         
     }
 
-    
-
-
     .attribution {
+        display: block;
         clear: both;
+        float: right;
+        margin-right: 10%;
+        margin-bottom: 1.5em;
     }
 
 }
 
+/************** Mobile devices with width less than 800px **********/
+@media screen and (max-width: 799px){
+    .desktop{
+        display: none;
+    }
+}
 
