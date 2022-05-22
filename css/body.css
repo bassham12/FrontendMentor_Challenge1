@@ -18,14 +18,14 @@
 }
 
 nav {
-        margin: 2em 1em;
-    }
+    margin: 2em 1em;
+}
 
 ul {
     list-style: none;
 }
  
-.list-items, .headline-para {
+.list-items, .headline-para, .sub-menu {
     color: #444;
 }
 
@@ -60,7 +60,7 @@ ul {
 
     .list-items {
         display: inline;
-        margin: 0em 1em;
+        margin-left: 2.5em;
     }
 
 
@@ -71,6 +71,13 @@ ul {
 
     }
     
+    .sub-menu {
+        display: none;
+    }
+
+    .featured-dropdown, .company-dropdown {
+        box-shadow: #555 0px 0px 5px 2px;
+    }
     
     .container {
         clear: both;
