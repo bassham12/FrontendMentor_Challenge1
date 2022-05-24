@@ -15,38 +15,32 @@
 <body>
   <div class="navigation">
     <nav>
-      <div class="logo-main-list">
-        <span class="logo"><img src="./images/logo.svg"></span>
-        <ul id="main-list-items" class="desktop">
-          <li class="list-items dropdown" id="features"><a>Features</a></li><img src="./images/icon-arrow-down.svg">
-          <div class="sub-menu" id="featured-sub">
-            <ul class="featured-dropdown">
-              <li class="featured-li"><a>Todo list</a></li>
-              <li class="featured-li"><a>Calendar</a></li>
-              <li class="featured-li"><a>Reminder</a></li>
-              <li class="featured-li"><a>planning</a></li>
-            </ul>
-          </div>
-          <li class="list-items dropdown" id="company"><a>Company</a></li><img src="./images/icon-arrow-down.svg">
-          
-          <div class="sub-menu" id="compay-sub">
-            <ul class="company-dropdown">
-              <li class="company-li"><a>History</a></li>
-              <li class="company-li"><a>Our Team</a></li>
-              <li class="company-li"><a>Blog</a></li>
-            </ul>
-          </div>
-          <li class="list-items"><a>Careers</a></li>
-          <li class="list-items"><a>About</a></li>
-        </ul>
-      </div>
-      <div class="login-register-list desktop">
-        <ul>
+      <span class="logo"><img src="./images/logo.svg"></span>
+      <ul id="main-list-items" class="desktop">
+        <li class="list-items dropdown" id="features"><a>Features</a><img src="./images/icon-arrow-down.svg">
+          <ul class="features-dropdown sub-menu">
+            <li class="features-li"><img src="./images/icon-todo.svg" alt="Todo icon" class="features-icon" /><a>Todo list</a></li>
+            <li class="features-li"><img src="./images/icon-calendar.svg" alt="Calendar icon" class="features-icon" /><a>Calendar</a></li>
+            <li class="features-li"><img src="./images/icon-reminders.svg" alt="reminder icon" class="features-icon" /><a>Reminder</a></li>
+            <li class="features-li"><img src="./images/icon-planning.svg" alt="planning icon" class="features-icon" /><a>planning</a></li>
+          </ul>
+        </li>
+        <li class="list-items dropdown" id="company"><a>Company</a><img src="./images/icon-arrow-down.svg">
+          <ul class="company-dropdown sub-menu">
+            <li class="company-li"><a>History</a></li>
+            <li class="company-li"><a>Our Team</a></li>
+            <li class="company-li"><a>Blog</a></li>
+          </ul>
+        </li>      
+        <li class="list-items"><a>Careers</a></li>
+        <li class="list-items"><a>About</a></li>
+        <div class="login-register">
           <li class="list-items" id="login"><a>Login</a></li>
           <li class="list-items" id="register"><a>Register</a></li>
-        </ul>
-        <img class="mobile" id="menu-open" src="./images/icon-menu.svg"  />
-      </div>
+        </div>  
+      </ul>
+      <img class="mobile" id="menu-open" src="./images/icon-menu.svg">
+      
     </nav>
   </div>
   <div class="container">
@@ -60,6 +54,12 @@
     </div>
     <div class="hero">
       <img class="hero-image" src="./images/desktop/image-hero-desktop.png" alt="man working on a laptop" />
+    </div>
+    <div class="client-names">
+      <a class="client-links"><img src="./images/client-databiz.svg" alt="client-databiz logo" /></a>
+      <a class="client-links"><img src="./images/client-audiophile.svg" alt="client-audiophile logo" /></a>
+      <a class="client-links"><img src="./images/client-meet.svg" alt="client-meet logo" /></a>
+      <a class="client-links"><img src="./images/client-maker.svg" alt="client-maker logo" /></a>
     </div>
   </div>
   <div class="attribution">
