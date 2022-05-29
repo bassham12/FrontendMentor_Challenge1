@@ -40,6 +40,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
 }
+
+nav ul li a:hover {
+    cursor: pointer;
+}
+
 .list-items, .headline-para {
     color: #444;
 }
@@ -73,7 +78,7 @@ nav ul li a {
         border: solid rgba(100,100,100,.2) 2px;
         border-radius: 10px;
         margin-top: 1rem;  
-        display: none;
+        visibility:hidden;
     }
 
     .sub-menu, .sub-menu li {
@@ -84,6 +89,10 @@ nav ul li a {
         position: relative;
         margin-top: 10px;
         font-size: 14px;
+    }
+
+    .dropdown .up-arrow {
+        visibility: hidden;        
     }
 
     .features-dropdown {
