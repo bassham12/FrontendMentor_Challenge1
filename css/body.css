@@ -249,6 +249,8 @@ nav ul li a:hover {
     }
 
     .logo {
+        display: block;
+        float: left;
         margin-left: 1em;
     }
 
@@ -259,6 +261,7 @@ nav ul li a:hover {
     }
 
     .side-menu {
+        display: none;
         position: fixed;
         height: 100vh;
         width: 50vw;
@@ -295,14 +298,55 @@ nav ul li a:hover {
         margin-top: 10px;
     }
 
-    body {
-        background-color: rgba(0,0,0,0.4);
+
+    /******************* Main **************/
+    .desktop {
+        display: none;
+    }
+    .headline {
+        margin-top: 30px;
+        font-size: 30px;
+        grid-area: headline;
     }
 
+    .headline-para {
+        margin-top: 20px;
+        grid-area: headline-para
+    }
 
+    .hero {
+        margin-top: 20px;
+        grid-area: hero;
+    }
 
-    
+    .container {
+        clear: both;
+        display: grid;
+        grid-template-areas:
+         'hero '
+         'headline'
+         'headline-para';
+        text-align: center;
+    }  
 
+    .hero-image {
+        width: 100vw; 
+    }
+
+    #learn-more-btn {
+        margin-top: 20px;
+        height: 35px;
+        width: 100px;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .attribution {
+        margin-top: 30px;
+        text-align: center;
+    }
 
 }
 
