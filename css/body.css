@@ -77,12 +77,12 @@ nav ul li a:hover {
         position: absolute;
         border: solid rgba(100,100,100,.2) 2px;
         border-radius: 10px;
-        margin-top: 1rem;  
-        visibility:hidden;
+        margin-top: 1rem;
+        visibility: hidden;  
     }
 
     .sub-menu, .sub-menu li {
-        background-color: #fff;
+        background-color: #fff;        
     }
 
     .sub-menu li {
@@ -91,10 +91,21 @@ nav ul li a:hover {
         font-size: 14px;
     }
 
-    .dropdown .up-arrow {
-        visibility: hidden;        
+    .arrow-btn {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #f2f2f2;
+        border: none;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
     }
 
+    #features-arrow-btn, #company-arrow-btn {
+        background-image: url('/images/icon-arrow-down.svg');
+    }
+
+    
     .features-dropdown {
         margin-left: -3.5em; 
         width: 8em;
@@ -118,7 +129,14 @@ nav ul li a:hover {
         width: 6em;
         height: 6em;
         width: 6.5em;
-        text-align: center;
+    }
+
+    .company-li {
+        text-align: left;
+    }
+
+    .company-li a {
+        margin-left: 25%;
     }
 
     .login-register {

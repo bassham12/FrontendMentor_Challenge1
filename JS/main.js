@@ -1,51 +1,32 @@
-const featureDropdown = document.getElementById("features");
-let featureCounter = 0;
-let companyCounter = 0;
+const featuresArrowBtn = document.querySelector('#features-arrow-btn');
+const featuresList = document.querySelector('#features-droplist');
+const companyArrowBtn = document.querySelector('#company-arrow-btn');
+const companyList = document.querySelector('#company-droplist');
 
-featureDropdown.addEventListener("click", () => {
+let arrowDown = true;
 
-    const featureDownArrow = document.getElementById("features-down-arrow");
-    const featureUpArrow = document.getElementById("features-up-arrow");
-    const featureDropList = document.getElementById("features-droplist");
-    featureCounter += 1;
-
-    if (featureCounter == 1) {
-        featureDownArrow.style.visibility="hidden";
-        featureUpArrow.style.visibility="visible";
-        featureDropList.style.visibility="visible";
+featuresArrowBtn.addEventListener("click", () => {
+    if (arrowDown == true) {
+        featuresArrowBtn.style.backgroundImage = `url("/images/icon-arrow-up.svg")`;
+        featuresList.style.visibility = "visible";
+        arrowDown = false;
     }
     else {
-        featureDropList.style.visibility="hidden";
-        featureUpArrow.style.visibility="hidden";
-        featureDownArrow.style.visibility="visible";
-        
+        featuresArrowBtn.style.backgroundImage = `url("images/icon-arrow-down.svg")`;
+        featuresList.style.visibility = "hidden";
+        arrowDown = true;
     }
+})
 
-    if (featureCounter > 1) featureCounter = 0;
-    console.log(featureCounter);
-});
-
-const companyDropdown = document.getElementById("company");
-
-companyDropdown.addEventListener("click", () => {
-
-    const companyDownArrow = document.getElementById("company-down-arrow");
-    const companyUpArrow = document.getElementById("company-up-arrow");
-    const companyDropList = document.getElementById("company-droplist");
-    companyCounter += 1;
-
-    if (companyCounter == 1) {
-        companyDownArrow.style.visibility="hidden";
-        companyUpArrow.style.visibility="visible";
-        companyDropList.style.visibility="visible";
+companyArrowBtn.addEventListener("click", () => {
+    if (arrowDown == true) {
+        companyArrowBtn.style.backgroundImage = `url("/images/icon-arrow-up.svg")`;
+        companyList.style.visibility = "visible";
+        arrowDown = false;
     }
     else {
-        companyDropList.style.visibility="hidden";
-        companyUpArrow.style.visibility="hidden";
-        companyDownArrow.style.visibility="visible";
-        
+        companyArrowBtn.style.backgroundImage = `url("images/icon-arrow-down.svg")`;
+        companyList.style.visibility = "hidden";
+        arrowDown = true;
     }
-
-    if (companyCounter > 1) companyCounter = 0;
-    console.log(companyCounter);
-});
+})
