@@ -30,3 +30,20 @@ companyArrowBtn.addEventListener("click", () => {
         arrowDown = true;
     }
 })
+
+
+const navOpenIcon = document.querySelector('#menu-icon');
+const sideBar = document.querySelector('.side-menu');
+
+navOpenIcon.addEventListener("click", () => {
+    sideBar.style.display = "block";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+})
+
+
+const navCloseIcon = document.querySelector('#close-menu-btn');
+
+navCloseIcon.addEventListener("click", () => {
+    sideBar.style.display = "none";
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
+})
