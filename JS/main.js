@@ -8,12 +8,12 @@ let arrowDown = true;
 featuresArrowBtn.addEventListener("click", () => {
     if (arrowDown == true) {
         featuresArrowBtn.style.backgroundImage = `url("/images/icon-arrow-up.svg")`;
-        featuresList.style.visibility = "visible";
+        featuresList.style.display = "block";
         arrowDown = false;
     }
     else {
         featuresArrowBtn.style.backgroundImage = `url("images/icon-arrow-down.svg")`;
-        featuresList.style.visibility = "hidden";
+        featuresList.style.display = "none";
         arrowDown = true;
     }
 })
@@ -21,12 +21,12 @@ featuresArrowBtn.addEventListener("click", () => {
 companyArrowBtn.addEventListener("click", () => {
     if (arrowDown == true) {
         companyArrowBtn.style.backgroundImage = `url("/images/icon-arrow-up.svg")`;
-        companyList.style.visibility = "visible";
+        companyList.style.display = "block";
         arrowDown = false;
     }
     else {
         companyArrowBtn.style.backgroundImage = `url("images/icon-arrow-down.svg")`;
-        companyList.style.visibility = "hidden";
+        companyList.style.display = "none";
         arrowDown = true;
     }
 })

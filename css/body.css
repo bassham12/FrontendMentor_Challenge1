@@ -22,13 +22,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
-    font-weight: 500;
-    width: 100%;
-    height: 1em;
-    padding: 1.5rem;
-}
-
 nav ul {
     list-style: none;
 }
@@ -49,7 +42,34 @@ nav ul li a:hover {
     color: #444;
 }
 
+.features-icon {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
 
+.arrow-btn {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f2f2f2;
+    border: none;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+#features-arrow-btn,
+#company-arrow-btn {
+    background-image: url('/images/icon-arrow-down.svg');
+}
+
+#register {
+    border: solid #444 1.5px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: -5px;
+}
 
 
 
@@ -60,10 +80,18 @@ nav ul li a:hover {
     .mobile {
         display: none;
     }
+
+    nav {
+        font-weight: 500;
+        width: 100%;
+        height: 1em;
+        margin: 1.5em 0em;
+    }
     
     .logo {
         font-weight: 500;
         float: left;
+        margin-left: 2%;
     }
 
     #main-list-items .list-items {
@@ -78,7 +106,7 @@ nav ul li a:hover {
         border: solid rgba(100,100,100,.2) 2px;
         border-radius: 10px;
         margin-top: 1rem;
-        visibility: hidden;  
+        display: none;  
     }
 
     .sub-menu, .sub-menu li {
@@ -90,21 +118,6 @@ nav ul li a:hover {
         margin-top: 10px;
         font-size: 14px;
     }
-
-    .arrow-btn {
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: #f2f2f2;
-        border: none;
-        width: 20px;
-        height: 20px;
-        margin-left: 5px;
-    }
-
-    #features-arrow-btn, #company-arrow-btn {
-        background-image: url('/images/icon-arrow-down.svg');
-    }
-
     
     .features-dropdown {
         margin-left: -3.5em; 
@@ -119,11 +132,6 @@ nav ul li a:hover {
         margin: 0px 5px;
     }
 
-    .features-icon {
-        position: relative;
-        width: 15px;
-        height: 15px;
-    }
 
     .company-dropdown {
         width: 6em;
@@ -143,12 +151,6 @@ nav ul li a:hover {
         float: right;
     }
 
-    #register {
-        border: solid #444 1.5px;
-        border-radius: 20px;
-        padding: 5px;
-        margin-top: -5px;
-    }
 
     #register a {
         padding: 1em;
@@ -233,8 +235,74 @@ nav ul li a:hover {
 
 /************** Mobile devices with width less than 800px **********/
 @media screen and (max-width: 799px){
-    .desktop{
+    
+
+    *, body, .navigation {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /********** navigation *******************/
+
+    nav {
+        margin-top: 1.5em;
+    }
+
+    .logo {
+        margin-left: 1em;
+    }
+
+    #menu-icon {
+        display: block;
+        float: right;
+        margin-right: 1em;
+    }
+
+    .side-menu {
+        position: fixed;
+        height: 100vh;
+        width: 50vw;
+        visibility: visible;
+        right: 0;
+        top: 0;
+        background-color: #f2f2f2;
+    }
+
+    .nav-lists {
+        margin-top: 80px;
+        margin-left: 25px;
+    }
+
+    .nav-lists li {
+        margin-top: 15px;
+    }
+
+    .sub-menu {
+        position: relative;
         display: none;
     }
+
+    .features-li, .company-li {
+        margin-left: 25px;
+    }
+
+    .login-register {
+        text-align: center;
+        margin-top: 2.5em;
+    }
+
+    #register {
+        margin-top: 10px;
+    }
+
+    body {
+        background-color: rgba(0,0,0,0.4);
+    }
+
+
+
+    
+
+
 }
 
